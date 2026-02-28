@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Restaurant | Classic American & Mediterranean Cuisine in Monticello, IN</title>
+    <meta name="description"
+        content="Welcome to USA Restaurant in Monticello, Indiana. Enjoy our famous all-day breakfast, classic American dishes, BBQ, and authentic Mediterranean & Greek flavors in a true family-friendly atmosphere.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-item">
+                <i class="ph ph-map-pin"></i>
+                <span>1515 N Main St, Monticello, IN</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="ph ph-clock"></i>
+                <span>Open Daily: 6:00 AM – 9:00 PM</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="ph ph-phone"></i>
+                <a href="tel:+15745838179">(574) 583-8179</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">USA <span>Restaurant</span></a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#location" class="btn btn-primary btn-sm">Visit Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <!-- The background image will be set via CSS or injected here later -->
+        <div class="hero-bg" style="background-image: url('assets/hero_diner.png');"></div>
+        <div class="container hero-content">
+            <span class="badge">Monticello's Favorite</span>
+            <h1>Classic American. <br><span class="highlight">Mediterranean Soul.</span></h1>
+            <p>From our famous all-day breakfast to our authentic Greek gyros and savory BBQ, we serve up hearty,
+                homestyle meals for the whole family.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">See Our Menu</a>
+                <a href="#location" class="btn btn-outline">Get Directions</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star-half"></i>
+                    </div>
+                    <span>4.4/5 on Top Rated</span>
+                </div>
+                <div class="stat">
+                    <i class="ph ph-coffee"></i>
+                    <span>Breakfast All Day</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ph ph-users"></i></div>
+                <h3>Family Friendly</h3>
+                <p>A welcoming, casual dining atmosphere with family-style seating, highchairs, and a dedicated kids'
+                    menu.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ph ph-egg-crack"></i></div>
+                <h3>Breakfast Anytime</h3>
+                <p>Craving country fried steak or a breakfast croissant at 8 PM? We serve breakfast all day, every day.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ph ph-globe-hemisphere-west"></i></div>
+                <h3>Diverse Flavors</h3>
+                <p>Enjoy American classics alongside authentic Greek pasta dishes and Mediterranean favorites.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="ph ph-wifi-high"></i></div>
+                <h3>Guest Amenities</h3>
+                <p>Free Wi-Fi, ample off-street parking, wheelchair accessibility, and convenient takeout options.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlight Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Menu Highlights</h2>
+                <p>A taste of what we offer. Moderately priced, generously portioned.</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="american">American Classics</button>
+                <button class="filter-btn" data-filter="greek">Mediterranean & Greek</button>
+                <button class="filter-btn" data-filter="bbq">BBQ</button>
+                <button class="filter-btn" data-filter="kids">Kids</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- item -->
+                <div class="menu-item" data-category="american">
+                    <div class="menu-img-container">
+                        <img src="assets/classic_breakfast.png" alt="Classic Breakfast" loading="lazy">
+                        <span class="price-tag">$10.50</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Half lb BBQ Chicken</h3>
+                        <p class="desc">A generous half-pound portion of perfectly cooked BBQ chicken.</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="menu-item" data-category="american">
+                    <div class="menu-img-container">
+                        <div class="img-placeholder"><i class="ph ph-fork-knife"></i></div>
+                        <span class="price-tag">$10.50</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Roast Pork</h3>
+                        <p class="desc">Tender roast pork served right, an American diner classic.</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="menu-item" data-category="greek">
+                    <div class="menu-img-container">
+                        <img src="assets/gyro_platter.png" alt="Gyros Dinner" loading="lazy">
+                        <span class="price-tag">$12.99</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Gyros Dinner</h3>
+                        <p class="desc">Authentic Mediterranean gyro meat served with traditional accompaniments.</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="menu-item" data-category="greek">
+                    <div class="menu-img-container">
+                        <div class="img-placeholder"><i class="ph ph-cooking-pot"></i></div>
+                        <span class="price-tag">$11.99</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Butterfly Pork Chop & Pasta</h3>
+                        <p class="desc">Greek style pasta dish served with a perfectly cooked butterfly pork chop.</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="menu-item" data-category="bbq">
+                    <div class="menu-img-container">
+                        <img src="assets/bbq_ribs.png" alt="BBQ Ribs" loading="lazy">
+                        <span class="price-tag">$13.99</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>BBQ Ribs</h3>
+                        <p class="desc">Fall-off-the-bone tender BBQ ribs smothered in rich barbecue sauce.</p>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="menu-item" data-category="kids">
+                    <div class="menu-img-container">
+                        <div class="img-placeholder"><i class="ph ph-hamburger"></i></div>
+                        <span class="price-tag">$4.99</span>
+                    </div>
+                    <div class="menu-content">
+                        <h3>Hamburger & Fries</h3>
+                        <p class="desc">A kid-sized portion of an American favorite (12 & under).</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-note">
+                <p><em>* Prices and availability are subject to change. Ask your server about our daily specials!</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2>What Our Guests Say</h2>
+                <div class="aggregate-rating">
+                    <div class="stars">
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star-half"></i>
+                    </div>
+                    <p>Ranked #7 Restaurant in Monticello</p>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">MR</div>
+                        <div class="reviewer-info">
+                            <h4>Monticello Regular</h4>
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Friendly service and a very good family-friendly atmosphere. Portion sizes
+                        are huge and the prices are great. This is part of our Monticello vacation routine!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">JD</div>
+                        <div class="reviewer-info">
+                            <h4>John D.</h4>
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph ph-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Love that they serve breakfast all day! The country fried steak and
+                        breakfast croissants are excellent. Real diner feel."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">SA</div>
+                        <div class="reviewer-info">
+                            <h4>Sarah A.</h4>
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph ph-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Traditional local spot. The Gyros dinner was surprisingly authentic and
+                        large enough for two meals. Staff was very busy but kept our coffee full."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Footer -->
+    <footer id="location" class="footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">USA <span>Restaurant</span></a>
+                <p>Casual dining restaurant serving traditional American cuisine and Mediterranean favorites with a
+                    family diner feel.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/usa.restaurant/" target="_blank" aria-label="Facebook"><i
+                            class="ph-fill ph-facebook-logo"></i></a>
+                    <a href="https://usarestaurant.food90.com" target="_blank" aria-label="Website"><i
+                            class="ph ph-globe"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col hours-col">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li><span>Monday</span> <span>6:00 AM – 9:00 PM</span></li>
+                    <li><span>Tuesday</span> <span>6:00 AM – 9:00 PM</span></li>
+                    <li><span>Wednesday</span> <span>6:00 AM – 9:00 PM</span></li>
+                    <li><span>Thursday</span> <span>6:00 AM – 9:00 PM</span></li>
+                    <li><span>Friday</span> <span>6:00 AM – 9:00 PM</span></li>
+                    <li><span>Saturday</span> <span>6:00 AM – 9:00 PM</span></li>
+                    <li><span>Sunday</span> <span>6:00 AM – 9:00 PM</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h3>Contact & Location</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="ph ph-map-pin"></i>
+                        <div>
+                            <strong>Address:</strong><br>
+                            1515 N Main St,<br>
+                            Monticello, IN 47960
+                        </div>
+                    </li>
+                    <li>
+                        <i class="ph ph-phone"></i>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+15745838179">+1 574-583-8179</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://www.mapquest.com/us/indiana/usa-restaurant-6260484" target="_blank"
+                    class="btn btn-outline btn-block mt-4">View MapQuest</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 USA Restaurant. All rights reserved.</p>
+                <p class="credit">Website for demonstration purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
