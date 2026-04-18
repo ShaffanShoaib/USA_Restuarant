@@ -54,7 +54,8 @@
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#location">Location</a></li>
-                <li><a href="#location" class="btn btn-primary btn-sm">Visit Us</a></li>
+                <li><a href="javascript:void(0)" id="loginLink">Login</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-primary btn-sm" id="signupLink">Sign Up</a></li>
             </ul>
         </div>
     </nav>
@@ -346,6 +347,82 @@
             </div>
         </div>
     </footer>
+
+    <!-- Authentication Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="ph ph-x"></i>
+            </button>
+
+            <!-- Login Form -->
+            <div id="loginFormContainer" class="auth-form-container">
+                <div class="auth-header">
+                    <h2>Welcome Back</h2>
+                    <p>Log in to your USA Restaurant account</p>
+                </div>
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-envelope"></i>
+                            <input type="email" id="loginEmail" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-lock"></i>
+                            <input type="password" id="loginPassword" placeholder="••••••••" required>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                    <p class="auth-switch">Don't have an account? <a href="javascript:void(0)" id="switchToSignup">Sign Up</a></p>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signupFormContainer" class="auth-form-container" style="display: none;">
+                <div class="auth-header">
+                    <h2>Create Account</h2>
+                    <p>Join the USA Restaurant family today</p>
+                </div>
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-user"></i>
+                            <input type="text" id="signupName" placeholder="John Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-envelope"></i>
+                            <input type="email" id="signupEmail" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-lock"></i>
+                            <input type="password" id="signupPassword" placeholder="••••••••" required>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                    <p class="auth-switch">Already have an account? <a href="javascript:void(0)" id="switchToLogin">Log In</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
