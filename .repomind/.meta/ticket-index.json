@@ -5,6 +5,7 @@
       "path": ".repomind/tickets/EPIC-001/T-001-database-schema-for-users.md",
       "title": "Database Schema for Users",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-001",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -13,6 +14,7 @@
       "path": ".repomind/tickets/EPIC-001/T-002-authentication-api-endpoints.md",
       "title": "Authentication API Endpoints",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-001",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -21,6 +23,7 @@
       "path": ".repomind/tickets/EPIC-001/T-003-signup-and-login-ui.md",
       "title": "Signup and Login UI",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-001",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -29,6 +32,7 @@
       "path": ".repomind/tickets/EPIC-001/T-004-auth-middleware-and-route-protection.md",
       "title": "Auth Middleware and Route Protection",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-001",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -37,6 +41,7 @@
       "path": ".repomind/tickets/EPIC-002/T-005-task-crud-api.md",
       "title": "Task CRUD API",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-002",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -45,6 +50,7 @@
       "path": ".repomind/tickets/EPIC-002/T-006-task-creation-and-editing-ui.md",
       "title": "Task Creation and Editing UI",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-002",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -53,6 +59,7 @@
       "path": ".repomind/tickets/EPIC-002/T-007-task-completion-logic.md",
       "title": "Task Completion Logic",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-002",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -61,6 +68,7 @@
       "path": ".repomind/tickets/EPIC-002/T-008-task-deletion-with-confirmation.md",
       "title": "Task Deletion with Confirmation",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-002",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -69,6 +77,7 @@
       "path": ".repomind/tickets/EPIC-003/T-009-dashboard-summary-view.md",
       "title": "Dashboard Summary View",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-003",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -77,6 +86,7 @@
       "path": ".repomind/tickets/EPIC-003/T-010-in-app-notification-system.md",
       "title": "In-App Notification System",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-003",
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
@@ -85,9 +95,12 @@
       "path": ".repomind/tickets/EPIC-003/T-011-task-deadline-notifications.md",
       "title": "Task Deadline Notifications",
       "status": "todo",
+      "priority": "medium",
       "epic": "EPIC-003",
       "updated_at": "2026-04-17T13:53:00.884Z"
     }
   ],
-  "updated_at": "2026-04-17T14:31:41.468Z"
+  "last_commit": "ef65492b8aa9c85bb8fd1fb8be57b926931e63dc",
+  "updated_at": "2026-04-18T13:45:15.035Z",
+  "checksum": "f55fc9444ce1b8b8b72006299602cce94aff7ff9657bcd8b480869871a232a4d"
 }
