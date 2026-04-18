@@ -87,4 +87,82 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    /* Authentication Modal Logic */
+    const authModal = document.getElementById('authModal');
+    const loginLink = document.getElementById('loginLink');
+    const signupLink = document.getElementById('signupLink');
+    const closeModal = document.getElementById('closeModal');
+    const modalBackdrop = authModal.querySelector('.modal-backdrop');
+    
+    const loginFormContainer = document.getElementById('loginFormContainer');
+    const signupFormContainer = document.getElementById('signupFormContainer');
+    const switchToSignup = document.getElementById('switchToSignup');
+    const switchToLogin = document.getElementById('switchToLogin');
+
+    const openModal = (view = 'login') => {
+        authModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        
+        if (view === 'signup') {
+            loginFormContainer.style.display = 'none';
+            signupFormContainer.style.display = 'block';
+        } else {
+            loginFormContainer.style.display = 'block';
+            signupFormContainer.style.display = 'none';
+        }
+    };
+
+    const closeAuthModal = () => {
+        authModal.classList.remove('active');
+        document.body.style.overflow = ''; // Re-enable scrolling
+    };
+
+    loginLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal('login');
+    });
+
+    signupLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal('signup');
+    });
+
+    closeModal.addEventListener('click', closeAuthModal);
+    modalBackdrop.addEventListener('click', closeAuthModal);
+
+    switchToSignup.addEventListener('click', () => {
+        loginFormContainer.style.display = 'none';
+        signupFormContainer.style.display = 'block';
+    });
+
+    switchToLogin.addEventListener('click', () => {
+        signupFormContainer.style.display = 'none';
+        loginFormContainer.style.display = 'block';
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && authModal.classList.contains('active')) {
+            closeAuthModal();
+        }
+    });
+
+    /* Form Submissions (Mock) */
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
+
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('loginEmail').value;
+        alert(`Welcome back! Logged in as ${email}`);
+        closeAuthModal();
+    });
+
+    signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('signupName').value;
+        alert(`Account created successfully! Welcome to the family, ${name}.`);
+        closeAuthModal();
+    });
 });
