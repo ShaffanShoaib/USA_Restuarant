@@ -2,7 +2,7 @@
 id: T-003
 epic: EPIC-001
 title: Signup and Login UI
-status: in_progress
+status: review
 priority: medium
 complexity: M
 commits: []
@@ -11,7 +11,7 @@ blocks: []
 tags:
   - root
 created_at: 2026-04-17T13:53:00.884Z
-updated_at: 2026-04-19T14:14:58.706Z
+updated_at: 2026-04-19T14:24:30.838Z
 ---
 
 # Signup and Login UI
