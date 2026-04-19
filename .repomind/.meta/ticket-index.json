@@ -22,11 +22,11 @@
       "id": "T-003",
       "path": ".repomind/tickets/EPIC-001/T-003-signup-and-login-ui.md",
       "title": "Signup and Login UI",
-      "status": "in_progress",
+      "status": "review",
       "priority": "medium",
       "complexity": "M",
       "epic": "EPIC-001",
-      "updated_at": "2026-04-19T14:14:58.706Z"
+      "updated_at": "2026-04-19T14:24:30.838Z"
     },
     {
       "id": "T-004",
@@ -101,7 +101,7 @@
       "updated_at": "2026-04-17T13:53:00.884Z"
     }
   ],
-  "last_commit": "31ab1b5136c07d6bf3c568999f3f290b53e6897d",
-  "updated_at": "2026-04-19T14:15:03.902Z",
-  "checksum": "8f4617d40c16349831b63a789e1fa72579cb3b60691f343881969f0d71de73f0"
+  "last_commit": "80aa767fd98bd54ba85392d45e1076cdc1f101a4",
+  "updated_at": "2026-04-19T14:24:38.520Z",
+  "checksum": "c2c78722f16c7628f8921ae83474ba587c2b3c9c469710ac2befabdc01a79a54"
 }
