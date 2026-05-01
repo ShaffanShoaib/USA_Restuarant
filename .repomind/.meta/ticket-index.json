@@ -19,16 +19,6 @@
       "updated_at": "2026-04-17T13:53:00.884Z"
     },
     {
-      "id": "T-003",
-      "path": ".repomind/tickets/EPIC-001/T-003-signup-and-login-ui.md",
-      "title": "Signup and Login UI",
-      "status": "review",
-      "priority": "medium",
-      "complexity": "M",
-      "epic": "EPIC-001",
-      "updated_at": "2026-04-19T14:24:30.838Z"
-    },
-    {
       "id": "T-004",
       "path": ".repomind/tickets/EPIC-001/T-004-auth-middleware-and-route-protection.md",
       "title": "Auth Middleware and Route Protection",
@@ -101,7 +91,7 @@
       "updated_at": "2026-04-17T13:53:00.884Z"
     }
   ],
-  "last_commit": "80aa767fd98bd54ba85392d45e1076cdc1f101a4",
-  "updated_at": "2026-04-19T14:24:38.520Z",
-  "checksum": "c2c78722f16c7628f8921ae83474ba587c2b3c9c469710ac2befabdc01a79a54"
+  "last_commit": "3b5affaf7a14e098bb94d1b6103454e60f92471d",
+  "updated_at": "2026-05-01T14:45:19.061Z",
+  "checksum": "b0aeff2409c06b5d4eb02c54cf912e9d46c9f213f98b0b88b9a810ad06c31e62"
 }
