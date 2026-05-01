@@ -2,7 +2,7 @@
 id: T-002
 epic: EPIC-001
 title: Authentication API Endpoints
-status: todo
+status: in-review
 priority: high
 complexity: M
 commits: []
@@ -11,7 +11,7 @@ blocks: []
 tags:
   - root
 created_at: 2026-04-17T13:53:00.884Z
-updated_at: 2026-04-17T13:53:00.884Z
+updated_at: 2026-05-01T14:45:22.753Z
 ---
 
 # Authentication API Endpoints
